@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Mi Hospital - Dr. Henry Bolaños{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Mi Hospital</h1>
+        <p class="lead">Instalaciones modernas para su atención médica</p>
+    </div>
+    
+    <div class="row mb-5">
+        <div class="col-lg-6">
+            <img src="/placeholder.svg?height=400&width=600" class="img-fluid rounded shadow" alt="Hospital">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="text-primary mb-3">Instalaciones de Primera</h3>
+            <p>Nuestro hospital cuenta con la más moderna tecnología médica y un equipo altamente calificado para brindar la mejor atención en ginecología y obstetricia.</p>
+            <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Quirófanos equipados con tecnología de punta</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Unidad de cuidados intensivos neonatales</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Laboratorio clínico especializado</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Salas de recuperación confortables</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

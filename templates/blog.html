@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Blog - Dr. Henry Bolaños{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Blog Médico</h1>
+        <p class="lead">Artículos y consejos sobre salud femenina</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card shadow border-0 mb-4">
+                <img src="/placeholder.svg?height=250&width=400" class="card-img-top" alt="Artículo">
+                <div class="card-body">
+                    <h5 class="card-title">Importancia del Control Prenatal</h5>
+                    <p class="card-text">El control prenatal es fundamental para garantizar la salud de la madre y el bebé durante el embarazo...</p>
+                    <small class="text-muted">Publicado el 15 de Enero, 2024</small>
+                </div>
+            </div>
+            
+            <div class="card shadow border-0 mb-4">
+                <img src="/placeholder.svg?height=250&width=400" class="card-img-top" alt="Artículo">
+                <div class="card-body">
+                    <h5 class="card-title">Telemedicina en Ginecología</h5>
+                    <p class="card-text">La telemedicina ha revolucionado la forma en que brindamos atención médica especializada...</p>
+                    <small class="text-muted">Publicado el 10 de Enero, 2024</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card shadow border-0">
+                <div class="card-header bg-primary text-white">
+                    <h6 class="mb-0">Artículos Recientes</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Cuidados durante el embarazo</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Prevención del cáncer cervical</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Planificación familiar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

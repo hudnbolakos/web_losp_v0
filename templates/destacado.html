@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Destacado - Dr. Henry Bolaños{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-secondary">Servicios Destacados</h1>
+        <p class="lead">Tratamientos y servicios especiales</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow border-0">
+                <div class="card-body p-4">
+                    <h5 class="text-secondary"><i class="fas fa-star me-2"></i>Ecografía 4D</h5>
+                    <p>Tecnología de última generación para visualizar al bebé en tiempo real durante el embarazo.</p>
+                    <img src="/placeholder.svg?height=200&width=300" class="img-fluid rounded" alt="Ecografía 4D">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow border-0">
+                <div class="card-body p-4">
+                    <h5 class="text-secondary"><i class="fas fa-heart me-2"></i>Medicina Reproductiva</h5>
+                    <p>Tratamientos especializados para parejas con dificultades para concebir.</p>
+                    <img src="/placeholder.svg?height=200&width=300" class="img-fluid rounded" alt="Medicina Reproductiva">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

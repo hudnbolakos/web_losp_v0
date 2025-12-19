@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Perfil Profesional - Dr. Henry Bolaños{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow border-0">
+                <div class="card-body text-center p-4">
+                    <img src="/placeholder.svg?height=200&width=200" class="rounded-circle mb-3" alt="Dr. Henry Bolaños">
+                    <h3 class="text-primary">Dr. Henry Bolaños</h3>
+                    <p class="text-muted">Especialista en Ginecología y Obstetricia</p>
+                    <div class="d-flex justify-content-center">
+                        <span class="badge bg-primary me-2">Ginecología</span>
+                        <span class="badge bg-success">Obstetricia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <h2 class="text-primary mb-4">Perfil Profesional</h2>
+            <div class="card shadow border-0 mb-4">
+                <div class="card-body p-4">
+                    <h5><i class="fas fa-graduation-cap text-primary me-2"></i>Formación Académica</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">• Médico Cirujano - Universidad Nacional</li>
+                        <li class="mb-2">• Especialista en Ginecología y Obstetricia</li>
+                        <li class="mb-2">• Certificación en Laparoscopia Ginecológica</li>
+                        <li class="mb-2">• Diplomado en Telemedicina</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card shadow border-0 mb-4">
+                <div class="card-body p-4">
+                    <h5><i class="fas fa-briefcase text-primary me-2"></i>Experiencia</h5>
+                    <p>Más de 15 años de experiencia en el campo de la ginecología y obstetricia, con especialización en:</p>
+                    <ul>
+                        <li>Control prenatal y atención del parto</li>
+                        <li>Cirugía ginecológica mínimamente invasiva</li>
+                        <li>Medicina reproductiva</li>
+                        <li>Telemedicina y consulta virtual</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card shadow border-0">
+                <div class="card-body p-4">
+                    <h5><i class="fas fa-award text-primary me-2"></i>Certificaciones</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li>• Sociedad Colombiana de Ginecología</li>
+                                <li>• Certificación en Telemedicina</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li>• Laparoscopia Avanzada</li>
+                                <li>• Medicina Materno-Fetal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

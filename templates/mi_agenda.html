@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Mi Agenda - Dr. Henry Bolaños{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-success">Mi Agenda</h1>
+        <p class="lead">Gestione sus citas médicas</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card shadow border-0">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">Próximas Citas</h5>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Para acceder a su agenda personal, por favor inicie sesión.
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-success btn-lg">
+                            <i class="fas fa-sign-in-alt me-2"></i>Iniciar Sesión
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card shadow border-0">
+                <div class="card-header bg-primary text-white">
+                    <h6 class="mb-0">Horarios de Atención</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><strong>Lunes - Viernes:</strong> 8:00 AM - 6:00 PM</li>
+                        <li class="mb-2"><strong>Sábados:</strong> 8:00 AM - 12:00 PM</li>
+                        <li class="mb-2"><strong>Domingos:</strong> Emergencias</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

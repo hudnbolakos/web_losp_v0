@@ -1,0 +1,73 @@
+/* Custom Styles for Dr. Henry Bolaños Website */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.specialty-card {
+  transition: transform 0.3s ease;
+}
+
+.specialty-card:hover {
+  transform: translateY(-5px);
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.social-icons a {
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff !important;
+}
+
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.bg-pink {
+  background-color: #e91e63 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto;
+}
+
+/* Custom colors for specialties */
+.text-pink {
+  color: #e91e63 !important;
+}
