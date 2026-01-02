@@ -33,15 +33,15 @@
             </div>
             <div class="col-lg-6">
                 <div class="ps-lg-4">
-                    <h1 class="display-4 fw-bold text-primary mb-4">Telemedicina</h1>
-                    <p class="lead mb-4">La medicina del futuro, disponible hoy para usted.</p>
+                    <h1 class="display-4 text-primary mb-4">Telemedicina</h1>
+                    <p class="lead mb-4">La salud al alcance de un clic, disponible hoy para usted.</p>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <div class="d-flex">
                                 <i class="fas fa-check-circle text-success me-3 mt-1"></i>
                                 <div>
-                                    <h6>Acceso 24/7</h6>
-                                    <p class="small text-muted">Consultas médicas desde cualquier lugar</p>
+                                    <h6>Accesibilidad</h6>
+                                    <p class="small text-muted">Atención médica sin barreras geográficas</p>
                                 </div>
                             </div>
                         </div>
@@ -82,44 +82,52 @@
 <!-- Online Consultation Section -->
 <section class="py-5">
     <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold text-primary">Consultorio Online</h2>
-            <p class="lead text-muted">Servicios médicos especializados a su alcance</p>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm border-0 text-center">
-                    <div class="card-body p-4">
-                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-                            <i class="fas fa-user-md fa-2x text-white"></i>
-                        </div>
-                        <h5 class="card-title">Profesional</h5>
-                        <p class="card-text text-muted">Conozca mi experiencia y especialidades médicas</p>
-                        <a href="{{ url_for('profesional') }}" class="btn btn-outline-primary">Ver Perfil</a>
-                    </div>
+        <!-- Modified layout to have info on left and cards on right -->
+        <div class="row align-items-center">
+            <!-- Left Side: Title and Description -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="pe-lg-4">
+                    <h1 class="display-6 text-primary mb-3">Consultorio Online</h1>
+                    <p class="lead text-muted">Servicios médicos especializados a su alcance</p>
+                    
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm border-0 text-center">
-                    <div class="card-body p-4">
-                        <div class="bg-danger rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-                            <i class="fas fa-video fa-2x text-white"></i>
+            
+            <!-- Right Side: Cards -->
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card h-100 shadow-sm border-0 text-center">
+                            <div class="card-body p-4">
+                                <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-user-md fa-2x text-white"></i>
+                                </div>
+                                </br>
+                                <a href="{{ url_for('profesional') }}" class="btn btn-outline-primary">Profesional</a>
+                            </div>
                         </div>
-                        <h5 class="card-title">Teleconsulta</h5>
-                        <p class="card-text text-muted">Consultas médicas virtuales seguras y efectivas</p>
-                        <a href="{{ url_for('teleconsulta') }}" class="btn btn-danger">Agendar Cita</a>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm border-0 text-center">
-                    <div class="card-body p-4">
-                        <div class="bg-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-                            <i class="fas fa-calendar-alt fa-2x text-white"></i>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card h-100 shadow-sm border-0 text-center">
+                            <div class="card-body p-4">
+                                <div class="bg-danger rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-video fa-2x text-white"></i>
+                                </div>
+                                </br>
+                                <a href="{{ url_for('teleconsulta') }}" class="btn btn-danger">Teleconsulta</a>
+                            </div>
                         </div>
-                        <h5 class="card-title">Mi Agenda</h5>
-                        <p class="card-text text-muted">Gestione sus citas y seguimiento médico</p>
-                        <a href="{{ url_for('mi_agenda') }}" class="btn btn-outline-success">Ver Agenda</a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0 text-center">
+                            <div class="card-body p-4">
+                                <div class="bg-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-calendar-alt fa-2x text-white"></i>
+                                </div>
+                                </br>
+                                <a href="{{ url_for('mi_agenda') }}" class="btn btn-outline-success">Mi Agenda</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -131,7 +139,7 @@
 <section class="py-5 bg-light">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold text-primary">Especialidades y Servicios</h2>
+            <h2 class="display-5 text-primary">Especialidades y Servicios</h2>
             <p class="lead text-muted">Atención médica especializada en diversas áreas</p>
         </div>
         <div class="row">
